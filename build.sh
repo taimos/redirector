@@ -21,5 +21,5 @@ docker rm ${CONTAINER}
 
 docker tag taimos/redirector:${VERSION} taimos/redirector:latest
 
-#docker push taimos/redirector:${VERSION}
-#docker push taimos/redirector:latest
+docker push taimos/redirector:${VERSION}
+docker push taimos/redirector:latest
