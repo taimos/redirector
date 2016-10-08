@@ -1,6 +1,7 @@
 node {
     def version
     stage('Preparation') {
+        checkout scm
         version = sh(script: 'git rev-list --all --count', returnStdout: true).trim()
         echo "Building version ${version}"
         sh 'docker pull nginx:stable-alpine'
